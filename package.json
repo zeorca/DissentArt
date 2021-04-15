@@ -1,11 +1,11 @@
 {
-    "name": "TailwindStarterTemplate",
+    "name": "DissentArt",
     "version": "1.0.0",
-    "description": "Tailwind Starter Template",
+    "description": "Dissent Art Landing",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tailwindtoolbox/StarterTemplate.git"
+        "url": "https://github.com/zeorca/DissentArt.git"
     },
     "main": "postcss.config.js",
     "dependencies": {
@@ -20,8 +20,8 @@
     },
     "scripts": {
         "del:js": "rimraf tailwind.config.js",
-        "create:js": "./node_modules/.bin/tailwind init tailwind.config.js",
-        "dev:css": "./node_modules/.bin/tailwind build tailwind.config.css -c tailwind.config.js -o dist/css/tailwind.css",
+        "create:js": "C:./node_modules/.bin/tailwind init tailwind.config.js",
+        "dev:css": "C:./node_modules/.bin/tailwind build tailwind.config.css -c tailwind.config.js -o dist/css/tailwind.css",
         "build:css": "postcss tailwind.config.css -o dist/css/tailwind.min.css"
     }
 }
