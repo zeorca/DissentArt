@@ -8,6 +8,11 @@
         <meta name="description" content="description here" />
         <meta name="keywords" content="keywords,here" />
         <link rel="stylesheet" href="css/tailwind.css" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
     </head>
 
@@ -132,7 +137,9 @@
                         Изготовление скульптур, <br />
                         барельефа и аэрографии на заказ г.Иркутск
                     </h4>
-                    <button class="btn rounded-full text-sm">СВЯЗАТЬСЯ С НАМИ</button>
+                    <button class="btn rounded-full text-sm">
+                        СВЯЗАТЬСЯ С НАМИ
+                    </button>
                 </div>
                 <div class="pt-24 order-last w-full">
                     <img class="mx-auto" src="./img/bg-header.png" alt="" />
@@ -143,7 +150,7 @@
         <div
             class="flex items-center flex-col bg-about bg-no-repeat bg-left-bottom mt-12"
         >
-            <h1 class="text-center font-bold text-4xl">О нас</h1>
+            <h2 class="text-center font-bold text-4xl">О нас</h2>
             <p class="text-center w-5/12 text-xl my-12">
                 Мы, дизайн мастерская <strong>«Dissent Art»</strong>, предлагаем
                 свои услуги для частных и коммерческих лиц. <br />
@@ -160,34 +167,265 @@
         <!--Types-->
         <div class="bg-gray-150">
             <div class="flex flex-col container mx-auto">
-                <h1 class="text-center font-bold text-4xl mt-12">Виды работ</h1>
+                <h2 class="text-center font-bold text-4xl mt-12">Виды работ</h2>
                 <div class="flex justify-around mb-16 mt-16">
                     <div class="flex flex-col items-center flex-none">
                         <img class="w-64" src="./img/types-ex-1.jpg" alt="" />
-                        <h2 class="text-center text-2xl font-bold mt-6">Барельеф</h2>
-                        <button class="btn text-lg mt-6 px-10 py-1">Заказать</button>
+                        <h2 class="text-center text-2xl font-bold mt-6">
+                            Барельеф
+                        </h2>
+                        <button class="btn text-lg mt-6 px-10 py-1">
+                            Заказать
+                        </button>
                     </div>
                     <div class="flex flex-col items-center flex-none">
                         <img class="w-64" src="./img/types-ex-2.jpg" alt="" />
-                        <h2 class="text-center text-2xl font-bold mt-6">Аэрография</h2>
-                        <button class="btn text-lg mt-6 px-10 py-1">Заказать</button>
+                        <h2 class="text-center text-2xl font-bold mt-6">
+                            Аэрография
+                        </h2>
+                        <button class="btn text-lg mt-6 px-10 py-1">
+                            Заказать
+                        </button>
                     </div>
                     <div class="flex flex-col items-center flex-none">
                         <img class="w-64" src="./img/types-ex-3.jpg" alt="" />
-                        <h2 class="text-center text-2xl font-bold mt-6">Арт-скульптура</h2>
-                        <button class="btn text-lg mt-6 px-10 py-1">Заказать</button>
+                        <h2 class="text-center text-2xl font-bold mt-6">
+                            Арт-скульптура
+                        </h2>
+                        <button class="btn text-lg mt-6 px-10 py-1">
+                            Заказать
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <!--Stages-->
-        <div class="container">
-          <h1>Этапы работы</h1>
-          <div class="flex justify-between">
-            <img src="./img/hero-stages.jpg" alt="">
-            <div class="border border-gray-100 opacity-25 my-0 py-0 h-12/12 w-0"></div>
-            <div></div>
-          </div>
+        <div class="container flex flex-col mx-auto">
+            <h2 class="text-center font-bold text-4xl mt-12">Этапы работы</h2>
+            <div class="flex flex-wrap overflow-hidden my-10">
+                <div
+                    class="w-full overflow-hidden xl:w-1/2 flex justify-center items-center"
+                >
+                    <img class="" src="./img/hero-stages.jpg" alt="" />
+                </div>
+                <ul
+                    class="w-full overflow-hidden xl:w-1/2 border-l-2 border-black my-0 py-0 h-12/12 w-0 pl-10 pr-24"
+                >
+                    <li class="flex mb-6">
+                        <h6 class="font-bold text-7xl leading-18">1</h6>
+                        <div class="ml-8">
+                            <h3 class="font-bold text-2xl">Эскиз</h3>
+                            <p class="text-lg mt-3">
+                                На основе ваших пожеланий разрабатываем и
+                                согласуем эскиз.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex mb-6">
+                        <h6 class="font-bold text-7xl leading-18">2</h6>
+                        <div class="ml-8">
+                            <h3 class="font-bold text-2xl">Договор</h3>
+                            <p class="text-lg mt-3">
+                                Фиксируем сроки исполнения и бюджет в договоре.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex mb-6">
+                        <h6 class="font-bold text-7xl leading-18">3</h6>
+                        <div class="ml-8">
+                            <h3 class="font-bold text-2xl">Начало работ</h3>
+                            <p class="text-lg mt-3">
+                                Создание скульптуры: изготовление каркаса,
+                                армирование, нанесение раствора, формирование
+                                объёма и формы.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex mb-6">
+                        <h6 class="font-bold text-7xl leading-18">4</h6>
+                        <div class="ml-8">
+                            <h3 class="font-bold text-2xl">Финальный этап</h3>
+                            <p class="text-lg mt-3">
+                                Придание скульптуре рельефа, детализации.
+                                Финальная грунтовка и покраска.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex mb-6">
+                        <h6 class="font-bold text-7xl leading-18">5</h6>
+                        <div class="ml-8">
+                            <h3 class="font-bold text-2xl">Доставка</h3>
+                            <p class="text-lg mt-3">
+                                Готовое скульптурное произведение надёжно
+                                закрепляем и отправляем к вам транспортной
+                                компанией.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Form-->
+        <div class="bg-gray-150 text-center">
+            <h2 class="font-bold text-4xl pt-10">
+                У вас есть идея для скульптуры?
+            </h2>
+            <p class="text-lg mt-8">
+                Расскажите нам о ней по подробнее. А мы вернемся с <br />
+                решением и расчетом стоимоcти
+            </p>
+            <form
+                class="my-8"
+                method="POST"
+                action="https://formfor.site/send/Aqg5C3HtQX8XJP5jkLCUYpF5JLOVk0"
+            >
+                <input
+                    class="py-1 border pl-4 w-40 mr-6"
+                    type="text"
+                    name="name"
+                    placeholder="Как вас зовут?"
+                />
+                <input
+                    class="py-1 border pl-4 w-40 mr-6"
+                    type="tel"
+                    name="tel"
+                    placeholder="Ваш телефон"
+                />
+                <button class="btn leading-9 m-0 py-0 w-40" type="submit">
+                    отправить
+                </button>
+            </form>
+            <p class="text-xxs pb-8">
+                Нажимания на 'Отправить' Вы соглашаетесь с политикой
+                конфиденциальности
+            </p>
+        </div>
+        <!--Gallery-->
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold pt-8">Галерея</h2>
+            <div>
+                <div class="flex flex-wrap overflow-hidden -mx-10 pb-8 px-20">
+                    <div class="gallery-img">
+                        <img src="./img/hero/ornstein-alpha.jpg" alt="" />
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="./img/hero/doll-alpha.jpg" alt="" />
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="./img/hero/lara-сroft-v1.jpg" alt="" />
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="./img/hero/ornstein-front.jpg" alt="" />
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="./img/hero/doll-finish.jpg" alt="" />
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="./img/hero/lara-croft-v2.jpg" alt="" />
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="./img/hero/tree.jpg" alt="" />
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="./img/hero/ornstein-back.jpg" alt="" />
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="./img/hero/flamingo.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="bg-gray-150 py-px bg-footer bg-right-bottom bg-no-repeat">
+            <div class="mx-auto w-footer bg-white my-6 text-center py-px">
+                <h2 class="text-4xl mt-16">Контакты</h2>
+                <div class="mt-8">
+                    <a href="mailto:mentaljaze@gmail.com"
+                        >mentaljaze@gmail.com</a
+                    >
+                </div>
+                <div class="my-4">
+                    <a href="tel:+7 904 145 61 70">+7 904 145 61 70</a>
+                </div>
+                <h3 class="mb-8">
+                    telegram: <a href="https://t.me/mentaljaze">@mentaljaze</a>
+                </h3>
+                <button class="btn rounded-full px-24 mb-8">Связаться с нами</button>
+                <div class="mb-16 flex justify-between px-24">
+                    <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M26.0761 0H13.8261C2.64685 0 0 2.64685 0 13.8261V26.0761C0 37.2554 2.64685 39.9022 13.8261 39.9022H26.0761C37.2554 39.9022 39.9022 37.2554 39.9022 26.0761V13.8261C39.9022 2.64685 37.2271 0 26.0761 0ZM32.2144 28.4686H29.3148C28.2175 28.4686 27.8783 27.5957 25.9065 25.5973C24.189 23.9347 23.4292 23.7102 23.0069 23.7102C22.4151 23.7102 22.2455 23.8798 22.2455 24.6961V27.3147C22.2455 28.0197 22.021 28.442 20.1623 28.442C17.0931 28.442 13.6848 26.5832 11.2923 23.1183C7.68782 18.0508 6.70024 14.2484 6.70024 13.4603C6.70024 13.038 6.86983 12.644 7.68616 12.644H10.5857C11.3173 12.644 11.5999 12.9815 11.8825 13.7696C13.3174 17.9094 15.7115 21.5422 16.6974 21.5422C17.0632 21.5422 17.2328 21.3726 17.2328 20.4449V16.1621C17.1197 14.1902 16.0773 14.0223 16.0773 13.319C16.0773 12.9799 16.3599 12.6423 16.8088 12.6423H21.371C21.9911 12.6423 22.2156 12.9799 22.2156 13.7114V19.4856C22.2156 20.1041 22.4982 20.3302 22.6661 20.3302C23.0319 20.3302 23.3428 20.1041 24.0178 19.429C26.1027 17.0914 27.594 13.4869 27.594 13.4869C27.7919 13.0646 28.1294 12.6706 28.8626 12.6706H31.7622C32.635 12.6706 32.8329 13.1195 32.635 13.7397C32.2692 15.4305 28.7213 20.4416 28.7213 20.4416C28.412 20.9487 28.299 21.1731 28.7213 21.7384C29.0305 22.1607 30.0447 23.0335 30.7214 23.8216C31.96 25.2298 32.916 26.4119 33.1704 27.2299C33.453 28.0446 33.029 28.4669 32.2127 28.4669L32.2144 28.4686Z"
+                            fill="black"
+                        />
+                    </svg>
+                    <svg
+                        width="41"
+                        height="40"
+                        viewBox="0 0 41 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M40.473 11.7773C40.4507 10.1019 40.1365 8.44316 39.5446 6.87527C39.0313 5.55276 38.2473 4.35168 37.2428 3.34877C36.2382 2.34587 35.0351 1.5632 33.7104 1.05076C32.1601 0.469759 30.5222 0.155603 28.8666 0.121667C26.735 0.0265456 26.0592 0 20.6482 0C15.2372 0 14.5437 1.48334e-07 12.4276 0.121667C10.7727 0.155853 9.13568 0.470005 7.58606 1.05076C6.26114 1.56284 5.05788 2.34539 4.05326 3.34834C3.04864 4.35129 2.26478 5.55255 1.75185 6.87527C1.16872 8.42183 0.85472 10.0565 0.823426 11.7087C0.728146 13.839 0.699341 14.5137 0.699341 19.9157C0.699341 25.3177 0.699341 26.0079 0.823426 28.1227C0.856663 29.7773 1.16909 31.4099 1.75185 32.9606C2.26564 34.2829 3.05008 35.4837 4.05503 36.4862C5.05999 37.4887 6.26337 38.2709 7.58828 38.7829C9.13365 39.3872 10.771 39.7239 12.4298 39.7783C14.5636 39.8734 15.2395 39.9022 20.6504 39.9022C26.0614 39.9022 26.755 39.9022 28.8711 39.7783C30.5266 39.7458 32.1646 39.4324 33.7148 38.8515C35.0392 38.3384 36.242 37.5555 37.2465 36.5527C38.251 35.5499 39.0352 34.3491 39.549 33.0269C40.1318 31.4785 40.4442 29.8459 40.4775 28.189C40.5727 26.061 40.6015 25.3863 40.6015 19.9821C40.5971 14.5801 40.5971 13.8943 40.473 11.7773ZM20.6349 30.1313C14.9758 30.1313 10.3913 25.5544 10.3913 19.9046C10.3913 14.2549 14.9758 9.67802 20.6349 9.67802C23.3517 9.67802 25.9572 10.7555 27.8783 12.6733C29.7994 14.5912 30.8786 17.1924 30.8786 19.9046C30.8786 22.6169 29.7994 25.2181 27.8783 27.136C25.9572 29.0538 23.3517 30.1313 20.6349 30.1313ZM31.2863 11.6844C29.9635 11.6844 28.8977 10.6182 28.8977 9.29975C28.8977 8.98674 28.9594 8.67679 29.0794 8.3876C29.1994 8.09842 29.3753 7.83565 29.597 7.61432C29.8187 7.39299 30.0819 7.21741 30.3715 7.09763C30.6612 6.97784 30.9717 6.91619 31.2852 6.91619C31.5987 6.91619 31.9092 6.97784 32.1989 7.09763C32.4885 7.21741 32.7517 7.39299 32.9734 7.61432C33.1951 7.83565 33.371 8.09842 33.491 8.3876C33.611 8.67679 33.6727 8.98674 33.6727 9.29975C33.6727 10.6182 32.6047 11.6844 31.2863 11.6844Z"
+                            fill="black"
+                        />
+                        <path
+                            d="M20.6506 26.602C24.3235 26.602 27.301 23.6245 27.301 19.9516C27.301 16.2787 24.3235 13.3013 20.6506 13.3013C16.9777 13.3013 14.0002 16.2787 14.0002 19.9516C14.0002 23.6245 16.9777 26.602 20.6506 26.602Z"
+                            fill="black"
+                        />
+                    </svg>
+                    <svg
+                        width="41"
+                        height="40"
+                        viewBox="0 0 41 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M15.8414 14.5667H15.2718H11.4746V18.0502H15.5566C16.2844 18.0502 16.9173 17.8602 16.9173 16.1818C16.9173 14.5034 15.8414 14.5667 15.8414 14.5667Z"
+                            fill="black"
+                        />
+                        <path
+                            d="M15.8414 20.5845H11.4746V25.0181H15.3034C15.3667 25.0181 15.4617 25.0181 15.5882 25.0181C16.2211 25.0181 17.4235 24.7647 17.4235 22.8646C17.4552 20.6161 15.8414 20.5845 15.8414 20.5845Z"
+                            fill="black"
+                        />
+                        <path
+                            d="M30.2698 0H10.3978C4.89191 0 0.39856 4.49692 0.39856 10.0072V29.9267C0.39856 35.4053 4.89191 39.9022 10.3978 39.9022H30.3015C35.8074 39.9022 40.3008 35.4053 40.3008 29.895V10.0072C40.2691 4.49692 35.7758 0 30.2698 0ZM23.8146 12.6674H30.4597V14.2508H23.8146V12.6674ZM20.7136 23.0863C20.7136 28.0265 15.8405 28.1849 15.8405 28.1849H11.3471H11.2206H7.99295V11.7173H11.1889H11.3155H15.8088C18.2454 11.7173 20.1756 13.1107 20.1756 16.0242C20.1756 18.9377 17.834 19.0961 17.834 19.0961C20.9351 19.0644 20.7136 23.0863 20.7136 23.0863ZM32.6431 22.8013H24.6373C24.6373 25.9681 27.3587 25.7148 27.3587 25.7148C29.9218 25.7148 29.8268 24.068 29.8268 24.068H32.5482C32.5482 28.5016 27.2637 28.3116 27.2637 28.3116C20.9351 28.3116 21.3464 22.0729 21.3464 22.0729C21.3464 22.0729 21.3464 15.8025 27.2637 15.8025C33.4975 15.7709 32.6431 22.8013 32.6431 22.8013Z"
+                            fill="black"
+                        />
+                        <path
+                            d="M27.3263 18.0815C24.9531 18.0815 24.605 20.5833 24.605 20.5833H29.6679C29.6679 20.5833 29.6996 18.0815 27.3263 18.0815Z"
+                            fill="black"
+                        />
+                    </svg>
+                    <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M29.9929 0H10.0735C4.59482 0 0.0979004 4.49692 0.0979004 10.0072V29.9267C0.0979004 35.4053 4.59482 39.9022 10.0735 39.9022H29.9929C35.5032 39.9022 40.0001 35.4053 40.0001 29.895V10.0072C40.0001 4.49692 35.5032 0 29.9929 0ZM22.0441 25.4931C20.4607 25.4931 18.9406 24.6697 18.4339 23.7196C18.4339 23.7196 17.5789 27.0132 17.3889 27.6465C16.7555 29.895 14.8554 32.1434 14.7287 32.3335C14.6337 32.4601 14.412 32.4285 14.3804 32.2384C14.3487 31.9534 13.8737 29.1033 14.412 26.7915C14.697 25.6197 16.3121 19.001 16.3121 19.001C16.3121 19.001 15.8371 18.0827 15.8371 16.7526C15.8371 14.6308 17.1038 13.0474 18.6873 13.0474C20.0173 13.0474 20.6824 14.0291 20.6824 15.2008C20.6824 16.4992 19.8273 18.4627 19.384 20.2678C19.0039 21.7879 20.1757 23.0229 21.7274 23.0229C24.5142 23.0229 26.4144 19.5394 26.4144 15.4225C26.4144 12.2873 24.2292 9.94388 20.2707 9.94388C15.8054 9.94388 12.9869 13.1741 12.9869 16.7843C12.9869 18.0193 13.367 18.906 13.9687 19.6027C14.2537 19.9194 14.2854 20.0461 14.1903 20.3945C14.127 20.6478 13.9687 21.2812 13.8737 21.5345C13.7787 21.8829 13.462 22.0412 13.1453 21.8829C11.0868 21.0595 10.1368 18.8744 10.1368 16.4042C10.1368 12.3507 13.6837 7.47375 20.6824 7.47375C26.3193 7.47375 30.0246 11.4323 30.0246 15.6759C29.9929 21.3128 26.7944 25.4931 22.0441 25.4931Z"
+                            fill="black"
+                        />
+                    </svg>
+                </div>
+            </div>
         </div>
         <!-- Uncomment for jquery  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script> -->
     </body>
