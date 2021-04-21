@@ -18,68 +18,44 @@
 
     <body class="bg-white font-body">
         <!--Nav-->
-        <nav class="fixed w-full z-30 top-0 bg-gray-150">
-            <div
-                class="w-9/12 container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
-            >
-                <div
-                    class="w-full flex-grow lg:flex lg:items-center hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
-                    id="nav-content"
+        <nav class="fixed w-full z-30 top-0 bg-gray-150 h-screen sm:h-auto hidden sm:block">
+            <div class="container mx-auto h-full">
+                <ul
+                    class=" link_box w-full sm:flex flex-row py-4 text-black sm:text-center text-gray-800"
                 >
-                    <ul
-                        class="link_box list-reset lg:flex justify-between flex-1 items-center"
-                    >
-                        <li class="w-1/6 mr-3">
-                            <a
-                                class="inline-block py-2 px-4 text-black font-bold no-underline"
-                                href="#header"
-                                >Главная</a
-                            >
-                        </li>
-                        <li class="w-1/6 mr-3">
-                            <a
-                                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                                href="#about"
-                                >О нас</a
-                            >
-                        </li>
-                        <li class="w-1/6 mr-3">
-                            <a
-                                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                                href="#types"
-                                >Виды работы</a
-                            >
-                        </li>
-                        <li class="w-1/6 mr-3">
-                            <a
-                                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                                href="#stages"
-                                >Этапы работы</a
-                            >
-                        </li>
-                        <li class="w-1/6 mr-4">
-                            <a
-                                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                                href="#gallery"
-                                >Галерея</a
-                            >
-                        </li>
-                        <li class="w-1/6 mr-5">
-                            <a
-                                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                                href="#footer"
-                                >Контакты</a
-                            >
-                        </li>
-                    </ul>
-                </div>
+                    <li class="w-1/5">
+                        <a
+                            class="hover:text-opacity-75 font-bold"
+                            href="#header"
+                            >Главная</a
+                        >
+                    </li>
+                    <li class="w-1/5">
+                        <a class="hover:text-opacity-75" href="#about">О нас</a>
+                    </li>
+                    <li class="w-1/5">
+                        <a class="hover:text-opacity-7" href="#types"
+                            >Виды работы</a
+                        >
+                    </li>
+                    <li class="w-1/5">
+                        <a class="hover:text-opacity-7" href="#gallery"
+                            >Галерея</a
+                        >
+                    </li>
+                    <li class="w-1/5">
+                        <a class="hover:text-opacity-7" href="#footer"
+                            >Контакты</a
+                        >
+                    </li>
+                </ul>
             </div>
-            <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+            <hr class="border-b border-gray-600 opacity-25 my-0 py-0" />
         </nav>
         <!--Header-->
         <div id="header" class="w-full bg-gray-150">
-            <div class="container mx-auto flex justify-around items-center">
-                <div class="w-full flex flex-col items-center">
+            <div class="container mx-auto flex flex-col lg:flex-row justify-around items-center">
+                <div class="mt-24 lg:mt-0 w-full flex flex-col items-center">
                     <svg
                         width="121"
                         height="159"
@@ -156,7 +132,7 @@
         <!--About-->
         <div
             id="about"
-            class="flex items-center flex-col bg-about bg-no-repeat bg-left-bottom mt-12"
+            class="flex items-center flex-col bg-about bg-no-repeat bg-left-bottom pt-12"
         >
             <h2 class="text-center font-bold text-4xl">О нас</h2>
             <p class="text-center w-5/12 text-xl my-12">
@@ -310,7 +286,7 @@
         </div>
         <!--Gallery-->
         <div id="gallery" class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold pt-8">Галерея</h2>
+            <h2 class="text-4xl font-bold pt-12">Галерея</h2>
             <div>
                 <div class="flex flex-wrap overflow-hidden -mx-10 pb-8 px-20">
                     <div class="gallery-img">
