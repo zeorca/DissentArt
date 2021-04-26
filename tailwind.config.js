@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
     future: {
         // removeDeprecatedGapUtilities: true,
@@ -14,6 +16,16 @@ module.exports = {
                 "Arial",
             ],
         },
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            black: colors.black,
+            white: colors.white,
+            gray: colors.trueGray,
+            indigo: colors.indigo,
+            red: colors.rose,
+            yellow: colors.amber,
+          },
         extend: {
             backgroundImage: (theme) => ({
                 about: "url('../img/bg-about.png')",
@@ -22,12 +34,10 @@ module.exports = {
             colors: {
                 gray: {
                     150: "#EFF0F2",
-                    600: "#4B5563",
-                    800: "#1F2937",
                 },
             },
             fontSize: {
-                xxs: "0.6rem",
+                "xxs": "0.6rem",
                 "7xl": "5rem",
                 "8xl": "6rem",
             },
@@ -42,6 +52,12 @@ module.exports = {
                 18: "4.5rem",
             },
             width: {
+                72: "18rem",
+                80: "20rem",
+                96: "24rem",
+                footer: "30rem",
+            },
+            maxWidth: {
                 72: "18rem",
                 80: "20rem",
                 96: "24rem",
