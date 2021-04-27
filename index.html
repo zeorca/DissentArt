@@ -15,40 +15,65 @@
             href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
             rel="stylesheet"
         />
+        <script
+            type="text/javascript"
+            src="https://lib.formfor.site/1.0/ffs-valid.min.js"
+        ></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="owl.carousel.min.js"></script>
+
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
     </head>
 
     <body class="bg-white font-body w-full">
         <div
-            class="fixed hidden w-full h-screen bg-gray-600 bg-opacity-50 z-40 flex items-center justify-center"
+            class="popup-form hidden fixed w-full h-screen bg-black bg-opacity-25 z-40 flex items-center justify-center"
         >
-            <div class="w-96 bg-white text-center">
-                <h2 class="text-4xl font-bold">У вас есть идея</h2>
+            <div class="relative w-footer bg-white text-center">
+                <h2 class="text-3xl font-bold mb-6 mt-12">У вас есть идея?</h2>
+                <svg
+                    class="close-form absolute z-50 top-0 right-0 m-8"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 23 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M2.68701 0L22.0416 19.3546L19.3546 22.0416L6.02994e-06 2.68701L2.68701 0Z"
+                        fill="#828282"
+                    />
+                    <path
+                        d="M0.831299 19.5566L20.1859 0.20205L22.8729 2.88906L3.5183 22.2436L0.831299 19.5566Z"
+                        fill="#828282"
+                    />
+                </svg>
+
                 <p class="text-xs">
                     Заполните форму и в ближайшее время <br />
                     мы свяжимся с вами
                 </p>
                 <form
-                    class="flex flex-col items-center placeholder-gray-150"
+                    class="flex flex-col items-center placeholder-gray-150 mt-6"
                     method="POST"
                     action="https://formfor.site/send/Aqg5C3HtQX8XJP5jkLCUYpF5JLOVk0"
                 >
                     <input
                         class="border leading-10 w-56 pl-4 placeholder-gray-600"
-                        type="email"
-                        name="email"
+                        type="text"
+                        name="name"
                         placeholder="Имя"
                     />
                     <input
                         class="border my-6 leading-10 w-56 pl-4 placeholder-gray-600"
-                        name="name"
+                        name="tel"
+                        type="tel"
                         placeholder="Телефон"
                     />
                     <input
                         class="border leading-10 w-56 pl-4 placeholder-gray-600"
-                        name="name"
+                        name="mail"
+                        type="mail"
                         placeholder="Mail"
                     />
                     <button
@@ -58,6 +83,10 @@
                         Отправить
                     </button>
                 </form>
+                <p class="text-xxs mb-6">
+                    Нажимания на 'Отправить' Вы соглашаетесь <br />
+                    с политикой конфиденциальности
+                </p>
             </div>
         </div>
         <!--Nav-->
@@ -98,7 +127,7 @@
             <hr class="border-b border-gray-600 opacity-25 my-0 py-0" />
         </nav>
         <!--Header-->
-        <header id="header" class="w-full bg-gray-150">
+        <header id="header" class="w-full bg-gray-150"> popup-btn
             <div
                 class="container mx-auto flex flex-col lg:flex-row justify-around items-center"
             >
@@ -168,7 +197,7 @@
                         барельефа и аэрографии на заказ <br />
                         г.Иркутск
                     </h4>
-                    <button class="btn rounded-full text-sm">
+                    <button class="btn popup-btn rounded-full text-sm">
                         СВЯЗАТЬСЯ С НАМИ
                     </button>
                 </div>
@@ -210,7 +239,7 @@
                         <h2 class="text-center text-2xl font-bold mt-6">
                             Барельеф
                         </h2>
-                        <button class="btn text-lg mt-6 px-10 py-1 mb-16">
+                        <button class="btn popup-btn text-lg mt-6 px-10 py-1 mb-16">
                             Заказать
                         </button>
                     </div>
@@ -223,7 +252,7 @@
                         <h2 class="text-center text-2xl font-bold mt-6">
                             Аэрография
                         </h2>
-                        <button class="btn text-lg mt-6 px-10 py-1 mb-16">
+                        <button class="btn popup-btn text-lg mt-6 px-10 py-1 mb-16">
                             Заказать
                         </button>
                     </div>
@@ -236,7 +265,7 @@
                         <h2 class="text-center text-2xl font-bold mt-6">
                             Арт-скульптура
                         </h2>
-                        <button class="btn text-lg mt-6 px-10 py-1 mb-16">
+                        <button class="btn popup-btn text-lg mt-6 px-10 py-1 mb-16">
                             Заказать
                         </button>
                     </div>
@@ -347,7 +376,7 @@
         <!--Gallery-->
         <section
             id="gallery"
-            class="block container mx-auto text-center"
+            class="block container mx-auto text-center bg-gray-150 lg:bg-white"
         >
             <h2 class="text-4xl font-bold py-12 xl:pb-4">Галерея</h2>
             <div class="owl-theme flex flex-wrap overflow-hidden" id="slider">
@@ -406,7 +435,7 @@
                 <h3 class="mb-8">
                     telegram: <a href="https://t.me/mentaljaze">@mentaljaze</a>
                 </h3>
-                <button class="btn rounded-full px-24 mb-8">
+                <button class="btn popup-btn rounded-full px-24 mb-8">
                     Связаться с нами
                 </button>
                 <div class="mb-16 flex justify-between px-24">
@@ -479,7 +508,15 @@
         </footer>
         <!-- Uncomment for jquery  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script> -->
         <script>
-            if(window.innerWidth <= 1280) {
+            $(".close-form").on('click', e => {
+                $(".popup-form").addClass("hidden");
+            })
+
+            $(".popup-btn").on('click', e => {
+                $(".popup-form").removeClass("hidden");
+            })
+
+            if (window.innerWidth <= 1280) {
                 $("#slider").addClass("owl-carousel");
             } else {
                 $("#slider").removeClass("owl-carousel");
@@ -495,7 +532,7 @@
                     },
                     600: {
                         items: 3,
-                    }
+                    },
                 },
             });
 
@@ -514,14 +551,6 @@
                     });
                 });
             }
-
-            // function highlight(element) {
-            //     for (let anchor of anchors) {
-            //         anchor.classList.remove("font-bold");
-            //     }
-
-            //     element.classList.add("font-bold");
-            // }
 
             window.addEventListener("scroll", (event) => {
                 let fromTop = window.scrollY;
