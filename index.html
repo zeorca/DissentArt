@@ -127,7 +127,7 @@
             <hr class="border-b border-gray-600 opacity-25 my-0 py-0" />
         </nav>
         <!--Header-->
-        <header id="header" class="w-full bg-gray-150"> popup-btn
+        <header id="header" class="w-full bg-gray-150">
             <div
                 class="container mx-auto flex flex-col lg:flex-row justify-around items-center"
             >
@@ -239,7 +239,9 @@
                         <h2 class="text-center text-2xl font-bold mt-6">
                             Барельеф
                         </h2>
-                        <button class="btn popup-btn text-lg mt-6 px-10 py-1 mb-16">
+                        <button
+                            class="btn popup-btn text-lg mt-6 px-10 py-1 mb-16"
+                        >
                             Заказать
                         </button>
                     </div>
@@ -252,7 +254,9 @@
                         <h2 class="text-center text-2xl font-bold mt-6">
                             Аэрография
                         </h2>
-                        <button class="btn popup-btn text-lg mt-6 px-10 py-1 mb-16">
+                        <button
+                            class="btn popup-btn text-lg mt-6 px-10 py-1 mb-16"
+                        >
                             Заказать
                         </button>
                     </div>
@@ -265,7 +269,9 @@
                         <h2 class="text-center text-2xl font-bold mt-6">
                             Арт-скульптура
                         </h2>
-                        <button class="btn popup-btn text-lg mt-6 px-10 py-1 mb-16">
+                        <button
+                            class="btn popup-btn text-lg mt-6 px-10 py-1 mb-16"
+                        >
                             Заказать
                         </button>
                     </div>
@@ -273,7 +279,7 @@
             </div>
         </section>
         <!--Stages-->
-        <section id="stages" class="container flex flex-col mx-auto">
+        <!-- <section id="stages" class="container flex flex-col mx-auto">
             <h2 class="text-center font-bold text-4xl mt-12">Этапы работы</h2>
             <div class="flex flex-wrap overflow-hidden my-10">
                 <div
@@ -282,12 +288,21 @@
                     <img class="" src="dist/img/hero-stages.jpg" alt="" />
                 </div>
                 <ul
-                    class="w-full lg:w-1/2 lg:border-l-2 border-black my-0 py-0 h-12/12 w-0 pl-10 xl:pr-24"
+                    class="w-full lg:w-1/2 lg:border-l-2 border-black my-0 py-0 h-12/12 w-0 md:pl-10 xl:pr-24 text-center md:text-left"
                 >
-                    <li class="flex mb-6">
-                        <h6 class="font-bold text-7xl leading-18">1</h6>
-                        <div class="ml-8">
-                            <h3 class="font-bold text-2xl">Эскиз</h3>
+                    <li class="md:flex items-center mb-6">
+                        <div
+                            class="relative inline-block rounded-full font-bold md:text-7xl text-6xl leading-18 border px-4 py-2"
+                        >
+                            <div
+                                class="w-12 h-12 bg-red-800 absolute top-0"
+                            ></div>
+                            <h6 class="z-20">1</h6>
+                    </div>
+                        <div class="md:ml-8">
+                            <h3 class="font-bold md:text-2xl text-4xl">
+                                Эскиз
+                            </h3>
                             <p class="text-lg mt-3">
                                 На основе ваших пожеланий разрабатываем и
                                 согласуем эскиз.
@@ -337,7 +352,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--Form-->
         <section id="form" class="lg:block hidden bg-gray-150 text-center">
             <h2 class="font-bold text-4xl pt-10">
@@ -374,46 +389,69 @@
             </p>
         </section>
         <!--Gallery-->
-        <section
-            id="gallery"
-            class="block container mx-auto text-center bg-gray-150 lg:bg-white"
-        >
-            <h2 class="text-4xl font-bold py-12 xl:pb-4">Галерея</h2>
-            <div class="owl-theme flex flex-wrap overflow-hidden" id="slider">
-                <div class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10">
-                    <img src="dist/img/hero/ornstein-alpha.jpg" alt="" />
-                </div>
+        <section class="w-full bg-gray-150">
+            <div
+                id="gallery"
+                class="block container mx-auto text-center lg:bg-white"
+            >
+                <h2 class="text-4xl font-bold py-12 xl:pb-4">Галерея</h2>
+                <div
+                    class="owl-theme flex flex-wrap overflow-hidden"
+                    id="slider"
+                >
+                    <div
+                        class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10"
+                    >
+                        <img src="dist/img/hero/ornstein-alpha.jpg" alt="" />
+                    </div>
 
-                <div class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10">
-                    <img src="dist/img/hero/doll-alpha.jpg" alt="" />
-                </div>
+                    <div
+                        class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10"
+                    >
+                        <img src="dist/img/hero/doll-alpha.jpg" alt="" />
+                    </div>
 
-                <div class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10">
-                    <img src="dist/img/hero/lara-сroft-v1.jpg" alt="" />
-                </div>
+                    <div
+                        class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10"
+                    >
+                        <img src="dist/img/hero/lara-сroft-close.jpg" alt="" />
+                    </div>
 
-                <div class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10">
-                    <img src="dist/img/hero/ornstein-front.jpg" alt="" />
-                </div>
+                    <div
+                        class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10"
+                    >
+                        <img src="dist/img/hero/ornstein-front.jpg" alt="" />
+                    </div>
 
-                <div class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10">
-                    <img src="dist/img/hero/doll-finish.jpg" alt="" />
-                </div>
+                    <div
+                        class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10"
+                    >
+                        <img src="dist/img/hero/doll-finish.jpg" alt="" />
+                    </div>
 
-                <div class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10">
-                    <img src="dist/img/hero/lara-croft-v2.jpg" alt="" />
-                </div>
+                    <div
+                        class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10"
+                    >
+                        <img src="dist/img/hero/lara-croft-full.jpg" alt="" />
+                    </div>
 
-                <div class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10">
-                    <img src="dist/img/hero/tree.jpg" alt="" />
-                </div>
+                    <div
+                        class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10"
+                    >
+                        <img src="dist/img/hero/woodpecker.jpg" alt="" />
+                    </div>
 
-                <div class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10">
-                    <img src="dist/img/hero/ornstein-back.jpg" alt="" />
-                </div>
+                    <div
+                        class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10"
+                    >
+                        <img src="dist/img/hero/ornstein-back.jpg" alt="" />
+                    </div>
 
-                <div class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10">
-                    <img src="dist/img/hero/flamingo.jpg" alt="" />
+                    <div
+                        class="w-full overflow-hidden xl:w-1/3 xl:my-10 xl:px-10"
+                    >
+                        <img src="dist/img/hero/flamingo.jpg" alt="" />
+                    </div>
                 </div>
             </div>
         </section>
@@ -508,13 +546,13 @@
         </footer>
         <!-- Uncomment for jquery  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script> -->
         <script>
-            $(".close-form").on('click', e => {
+            $(".close-form").on("click", (e) => {
                 $(".popup-form").addClass("hidden");
-            })
+            });
 
-            $(".popup-btn").on('click', e => {
+            $(".popup-btn").on("click", (e) => {
                 $(".popup-form").removeClass("hidden");
-            })
+            });
 
             if (window.innerWidth <= 1280) {
                 $("#slider").addClass("owl-carousel");
