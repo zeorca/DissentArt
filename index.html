@@ -91,41 +91,63 @@
         </div>
         <!--Nav-->
         <nav
-            class="fixed w-full z-30 top-0 bg-gray-150 h-screen sm:h-auto hidden sm:block"
+            class="hidden fixed w-full z-30 top-0 bg-gray-150 h-screen lg:h-auto lg:block"
         >
             <div class="container mx-auto h-full">
+                <a href="#">
+                    <svg
+                        class="lg:hidden absolute z-50 top-0 right-0 mr-8 mt-16"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 23 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M2.68701 0L22.0416 19.3546L19.3546 22.0416L6.02994e-06 2.68701L2.68701 0Z"
+                            fill="#828282"
+                        />
+                        <path
+                            d="M0.831299 19.5566L20.1859 0.20205L22.8729 2.88906L3.5183 22.2436L0.831299 19.5566Z"
+                            fill="#828282"
+                        />
+                    </svg>
+                </a>
                 <ul
-                    class="link_box w-full sm:flex flex-row py-4 text-black sm:text-center text-gray-800"
+                    class="link_box w-full flex lg:flex-row flex-col lg:py-4 text-black sm:text-center text-gray-800 ml-4 justify-between text-xl mt-16 lg:m-0"
+                    style="height: 50%"
                 >
-                    <li class="w-1/5">
-                        <a
-                            class="hover:text-opacity-75 font-bold"
-                            href="#header"
-                            >Главная</a
-                        >
+                    <li class="lg:w-1/5">
+                        <a class="font-bold" href="#header">Главная</a>
                     </li>
-                    <li class="w-1/5">
-                        <a class="hover:text-opacity-75" href="#about">О нас</a>
+                    <li class="lg:w-1/5">
+                        <a class="opacity-75" href="#about">О нас</a>
                     </li>
-                    <li class="w-1/5">
-                        <a class="hover:text-opacity-7" href="#types"
-                            >Виды работы</a
-                        >
+                    <li class="lg:w-1/5">
+                        <a class="opacity-75" href="#types">Виды работы</a>
                     </li>
-                    <li class="w-1/5">
-                        <a class="hover:text-opacity-7" href="#gallery"
-                            >Галерея</a
-                        >
+                    <li class="lg:w-1/5">
+                        <a class="opacity-75" href="#gallery">Галерея</a>
                     </li>
-                    <li class="w-1/5">
-                        <a class="hover:text-opacity-7" href="#footer"
-                            >Контакты</a
-                        >
+                    <li class="lg:w-1/5">
+                        <a class="opacity-75" href="#footer">Контакты</a>
                     </li>
                 </ul>
             </div>
             <hr class="border-b border-gray-600 opacity-25 my-0 py-0" />
         </nav>
+        <svg
+            class="hamburger absolute top-0 right-0 mr-8 mt-16"
+            width="33"
+            height="20"
+            viewBox="0 0 33 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <rect width="33" height="3.83721" fill="black" />
+            <rect y="7.67444" width="33" height="3.83721" fill="black" />
+            <rect y="15.3489" width="33" height="3.83721" fill="black" />
+        </svg>
         <!--Header-->
         <header id="header" class="w-full bg-gray-150">
             <div
@@ -279,71 +301,115 @@
             </div>
         </section>
         <!--Stages-->
-        <!-- <section id="stages" class="container flex flex-col mx-auto">
-            <h2 class="text-center font-bold text-4xl mt-12">Этапы работы</h2>
-            <div class="flex flex-wrap overflow-hidden my-10">
+        <section id="stages" class="container flex flex-col mx-auto">
+            <h2 class="text-center font-bold text-4xl md:mt-12 mt-20">
+                Этапы работы
+            </h2>
+            <div class="flex flex-wrap overflow-hidden md:my-10 my-20">
                 <div
                     class="lg:flex hidden w-full overflow-hidden lg:w-1/2 flex justify-center items-center mx-auto"
                 >
                     <img class="" src="dist/img/hero-stages.jpg" alt="" />
                 </div>
                 <ul
-                    class="w-full lg:w-1/2 lg:border-l-2 border-black my-0 py-0 h-12/12 w-0 md:pl-10 xl:pr-24 text-center md:text-left"
+                    class="w-full lg:w-1/2 lg:border-l-2 border-black my-0 py-0 h-12/12 w-0 md:pl-10 xl:pr-24 text-center md:text-left px-4"
                 >
                     <li class="md:flex items-center mb-6">
-                        <div
-                            class="relative inline-block rounded-full font-bold md:text-7xl text-6xl leading-18 border px-4 py-2"
+                        <h6
+                            class="inline-block font-bold md:text-7xl text-6xl leading-18 border-0 px-6 py-3 bg-gray-number md:bg-transparent"
+                            style="
+                                border-radius: 75px 75px 75px 75px / 85px 85px
+                                    85px 85px;
+                            "
                         >
-                            <div
-                                class="w-12 h-12 bg-red-800 absolute top-0"
-                            ></div>
-                            <h6 class="z-20">1</h6>
-                    </div>
+                            1
+                        </h6>
                         <div class="md:ml-8">
-                            <h3 class="font-bold md:text-2xl text-4xl">
+                            <h3 class="font-bold md:text-2xl text-4xl mt-6">
                                 Эскиз
                             </h3>
-                            <p class="text-lg mt-3">
+                            <p class="text-xl md:mt-3 mt-8">
                                 На основе ваших пожеланий разрабатываем и
                                 согласуем эскиз.
                             </p>
                         </div>
                     </li>
-                    <li class="flex mb-6">
-                        <h6 class="font-bold text-7xl leading-18">2</h6>
-                        <div class="ml-8">
-                            <h3 class="font-bold text-2xl">Договор</h3>
-                            <p class="text-lg mt-3">
-                                Фиксируем сроки исполнения и бюджет в договоре.
+                    <li class="md:flex items-center mb-6 mt-20 md:mt-0">
+                        <h6
+                            class="inline-block font-bold md:text-7xl text-6xl leading-18 border-0 px-6 py-3 bg-gray-number md:bg-transparent"
+                            style="
+                                border-radius: 75px 75px 75px 75px / 85px 85px
+                                    85px 85px;
+                            "
+                        >
+                            2
+                        </h6>
+                        <div class="md:ml-8">
+                            <h3 class="font-bold md:text-2xl text-4xl mt-6">
+                                Договор
+                            </h3>
+                            <p class="text-xl md:mt-3 mt-8">
+                                Фиксируем сроки исполнения, стоимость и бюджет в
+                                договоре.
                             </p>
                         </div>
                     </li>
-                    <li class="flex mb-6">
-                        <h6 class="font-bold text-7xl leading-18">3</h6>
-                        <div class="ml-8">
-                            <h3 class="font-bold text-2xl">Начало работ</h3>
-                            <p class="text-lg mt-3">
+                    <li class="md:flex items-center mb-6 mt-20 md:mt-0">
+                        <h6
+                            class="inline-block font-bold md:text-7xl text-6xl leading-18 border-0 px-6 py-3 bg-gray-number md:bg-transparent"
+                            style="
+                                border-radius: 75px 75px 75px 75px / 85px 85px
+                                    85px 85px;
+                            "
+                        >
+                            3
+                        </h6>
+                        <div class="md:ml-8">
+                            <h3 class="font-bold md:text-2xl text-4xl mt-6">
+                                Начало работы
+                            </h3>
+                            <p class="text-xl md:mt-3 mt-8">
                                 Создание скульптуры: изготовление каркаса,
                                 армирование, нанесение раствора, формирование
                                 объёма и формы.
                             </p>
                         </div>
                     </li>
-                    <li class="flex mb-6">
-                        <h6 class="font-bold text-7xl leading-18">4</h6>
-                        <div class="ml-8">
-                            <h3 class="font-bold text-2xl">Финальный этап</h3>
-                            <p class="text-lg mt-3">
+                    <li class="md:flex items-center mb-6 mt-20 md:mt-0">
+                        <h6
+                            class="inline-block font-bold md:text-7xl text-6xl leading-18 border-0 px-6 py-3 bg-gray-number md:bg-transparent"
+                            style="
+                                border-radius: 75px 75px 75px 75px / 85px 85px
+                                    85px 85px;
+                            "
+                        >
+                            4
+                        </h6>
+                        <div class="md:ml-8">
+                            <h3 class="font-bold md:text-2xl text-4xl mt-6">
+                                Финальный этап
+                            </h3>
+                            <p class="text-xl md:mt-3 mt-8">
                                 Придание скульптуре рельефа, детализации.
                                 Финальная грунтовка и покраска.
                             </p>
                         </div>
                     </li>
-                    <li class="flex mb-6">
-                        <h6 class="font-bold text-7xl leading-18">5</h6>
-                        <div class="ml-8">
-                            <h3 class="font-bold text-2xl">Доставка</h3>
-                            <p class="text-lg mt-3">
+                    <li class="hidden md:flex items-center mb-6">
+                        <h6
+                            class="inline-block font-bold md:text-7xl text-6xl leading-18 border-0 px-6 py-3 bg-gray-number md:bg-transparent"
+                            style="
+                                border-radius: 75px 75px 75px 75px / 85px 85px
+                                    85px 85px;
+                            "
+                        >
+                            5
+                        </h6>
+                        <div class="md:ml-8">
+                            <h3 class="font-bold md:text-2xl text-4xl mt-6">
+                                Доставка
+                            </h3>
+                            <p class="text-xl md:mt-3 mt-8">
                                 Готовое скульптурное произведение надёжно
                                 закрепляем и отправляем к вам транспортной
                                 компанией.
@@ -352,7 +418,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!--Form-->
         <section id="form" class="lg:block hidden bg-gray-150 text-center">
             <h2 class="font-bold text-4xl pt-10">
@@ -546,6 +612,9 @@
         </footer>
         <!-- Uncomment for jquery  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script> -->
         <script>
+
+            // Form
+
             $(".close-form").on("click", (e) => {
                 $(".popup-form").addClass("hidden");
             });
@@ -553,6 +622,18 @@
             $(".popup-btn").on("click", (e) => {
                 $(".popup-form").removeClass("hidden");
             });
+
+            // Hamburger
+
+            $(".hamburger").on("click", (e) => {
+                $("nav").removeClass("hidden");
+            })
+
+            $("nav a").on("click", (e) => {
+                $("nav").addClass("hidden");
+            });
+
+            // Slider
 
             if (window.innerWidth <= 1280) {
                 $("#slider").addClass("owl-carousel");
@@ -573,6 +654,8 @@
                     },
                 },
             });
+
+            // Scroll
 
             const anchors = document.querySelectorAll('.link_box a[href*="#"]');
 
@@ -602,16 +685,20 @@
                         document.documentElement.scrollHeight >= fromTop + 900
                     ) {
                         block.classList.add("font-bold");
+                        block.classList.remove("opacity-75");
                     } else if (
                         document.documentElement.scrollHeight <
                         fromTop + 900
                     ) {
                         block.classList.remove("font-bold");
+                        block.classList.add("opacity-75");
                         if (Object.is(arr.length - 1, key)) {
                             block.classList.add("font-bold");
+                            block.classList.remove("opacity-75");
                         }
                     } else {
                         block.classList.remove("font-bold");
+                        block.classList.add("opacity-75");
                     }
                 });
             });

@@ -34,6 +34,7 @@ module.exports = {
             colors: {
                 gray: {
                     150: "#EFF0F2",
+                    'number': "#c4c4c4",
                 },
             },
             fontSize: {
